@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #f15156;
+  --white: #ffffff;
+  --text: #d9d9d9;
+  --secondary: #0d3b66;
+  --dark-red: #e44449;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialised;
+  background-color: #f15156;
+}
+
+.container {
+  height: 100vh;
+  width: 100wh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .header{
+  
+} */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  height: 8rem;
+}
+
+.navlink {
+  display: flex;
+  gap: 6.2rem;
+}
+
+.navlink a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: all 300ms ease-in-out;
+}
+
+.navlink a:hover {
+  filter: brightness(0.8);
+}
+
+.hero-container {
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.hero-section {
+  margin-top: 6.4rem;
+  display: flex;
+  width: 100%;
+  gap: 10.4rem;
+}
+
+.intro-section {
+  padding-top: 9.8rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.intro-section img {
+  width: 30rem;
+  height: 3.4rem;
+}
+
+.intro-section > strong {
+  color: var(--white);
+  font-size: 7.2rem;
+  margin-top: 7.2rem;
+  letter-spacing: -0.2rem;
+  max-width: 51.9rem;
+  text-align: left;
+  width: fit-content;
+  line-height: 110%;
+}
+
+.intro-section > p {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 8rem;
+  max-width: 41.3rem;
+  width: fit-content;
+}
+
+.intro-image-section {
+  max-width: 59.2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.access-button {
+  background-color: var(--dark-red);
+  border-radius: 20px;
+  padding: 4rem 5rem;
+}
+
+.access-button button {
+  all: unset;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.2rem;
+  background-color: var(--white);
+  color: var(--secondary);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: all 300ms ease-in-out;
+}
+
+.access-button button:hover {
+  filter: brightness(0.8);
+}
+
+.hero-shape {
+  background-color: var(--dark-red);
+  border-radius: 20px 20px 0 0;
+  padding: 2.4rem 0;
+  overflow: hidden;
+}
+
+.shape-section-hero {
+  display: flex;
+  flex: 1;
+  background-color: var(--dark-red);
+  height: calc(65.7rem - 9.8rem);
+  align-self: flex-end;
+  border-radius: 20px 0 0 20px;
+  overflow: hidden;
+}
