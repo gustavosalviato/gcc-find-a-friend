@@ -17,12 +17,29 @@
     <title>Find a Friend</title>
   </head>
   <body>
+    <button
+      aria-label="abrir/fechar menu"
+      class="open-menu hide"
+      onclick="handleOpenMenu()"
+      id="open-menu"
+    >
+      <img src="/assets/menu.svg" />
+    </button>
+
+    <button
+      aria-label="abrir/fechar menu"
+      class="close-menu hide"
+      id="close-menu"
+      onclick="handleOpenMenu()"
+    >
+      <img src="/assets/close-menu.svg" />
+    </button>
     <div class="container">
       <header class="header">
         <div class="header-container">
           <img src="assets/logo.svg" alt="" />
 
-          <nav class="navlink">
+          <nav class="navlink invisible-nav-link" id="navlink">
             <a href="">Home</a>
             <a href="">Sobre o app</a>
             <a href="">Animais disponíveis</a>
