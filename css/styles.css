@@ -32,7 +32,7 @@ body {
 
 .container {
   height: 100vh;
-  width: 100wh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -68,6 +68,14 @@ body {
   filter: brightness(0.8);
 }
 
+@media (max-width: 992px) {
+  .header-container {
+    display: none;
+  }
+}
+
+/* Primeira Seção */
+
 .hero-container {
   width: 100%;
 }
@@ -94,12 +102,20 @@ body {
 }
 
 .intro-section img {
-  width: 30rem;
-  height: 3.4rem;
+  width: 10rem;
+  height: 3.2rem;
 }
 
-.intro-section > strong {
+.logo-wrapper {
   color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.intro-section-title {
+  color: var(--white);
+  display: block;
   font-size: 7.2rem;
   margin-top: 7.2rem;
   letter-spacing: -0.2rem;
@@ -170,6 +186,62 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 992px) {
+  .hero-content {
+    padding: 1.6rem;
+  }
+  .hero-section {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .logo-wrapper {
+    flex-direction: column;
+    align-self: flex-start;
+  }
+
+  .logo-wrapper img {
+    align-self: flex-start;
+  }
+
+  .logo-wrapper p {
+    padding-left: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .intro-section-title {
+    display: block;
+    margin-top: 3.6rem !important;
+    font-size: 4.4rem;
+    max-width: 26.4rem;
+    width: 100%;
+  }
+
+  .intro-section > p {
+    display: none;
+  }
+
+  .intro-section {
+    padding-top: 5.6rem;
+  }
+
+  .intro-image-section {
+    gap: 0;
+  }
+
+  .access-button {
+    background-color: transparent;
+    margin-top: -12rem;
+  }
+
+  .access-button button {
+    font-size: 1.4rem;
+    height: 5.6rem;
+  }
+}
+
+/* Segunda Seção */
+
 .about-container {
   width: 100%;
   background-color: var(--white);
@@ -178,7 +250,7 @@ body {
 .about-content {
   max-width: 144rem;
   margin: 0 auto;
-  padding: 3.2rem;
+  padding: 0 1.6rem;
 }
 
 .about-section {
