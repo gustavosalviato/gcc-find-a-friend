@@ -19,6 +19,7 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css//slide.css" />
     <title>Find a Friend</title>
   </head>
   <body>
@@ -45,11 +46,11 @@
           <img src="assets/logo.svg" alt="" />
 
           <nav class="navlink invisible-nav-link" id="navlink">
-            <a href="">Home</a>
-            <a href="">Sobre o app</a>
-            <a href="">Animais disponíveis</a>
-            <a href="">Sobre a FindAFriend</a>
-            <a href="">Contato</a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre o app</a>
+            <a href="#animais">Animais disponíveis</a>
+            <a href="#find-a-friend">Sobre a FindAFriend</a>
+            <a href="#contato">Contato</a>
           </nav>
         </div>
       </header>
@@ -57,7 +58,7 @@
       <main class="main-container">
         <div class="hero-container">
           <div class="hero-content">
-            <div class="hero-section">
+            <div class="hero-section" id="home">
               <section class="intro-section">
                 <div class="logo-wrapper">
                   <img src="assets/animal-ellipse.svg" alt="" />
@@ -86,7 +87,7 @@
 
         <div class="about-container">
           <div class="about-content">
-            <div class="about-section">
+            <div class="about-section" id="sobre">
               <img src="/assets/image-section-2.svg" alt="" />
 
               <div class="about-section-info">
@@ -132,7 +133,7 @@
 
         <div class="available-pets-container">
           <div class="available-pets-content">
-            <section class="available-section">
+            <section class="available-section" id="animais">
               <div class="available-intro">
                 <strong> Há muitos amigos esperando por você! </strong>
 
@@ -147,9 +148,27 @@
 
               <div class="available-slider">
                 <button>Acesse Agora</button>
-                
 
-                <div>Slider</div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/hamilton.svg" alt="" />
+                    </div>
+
+                    <div class="swiper-slide">
+                      <img src="assets/cleiton.svg" alt="" />
+                    </div>
+
+                    <div class="swiper-slide">
+                      <img src="assets/aldo.svg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
             </section>
           </div>
@@ -159,5 +178,23 @@
   </body>
 
   <script src="js/main.js"></script>
+
+  <!-- Swiper Js -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </html>
