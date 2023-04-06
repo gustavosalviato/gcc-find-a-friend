@@ -49,8 +49,8 @@
             <a href="#home">Home</a>
             <a href="#sobre">Sobre o app</a>
             <a href="#animais">Animais disponíveis</a>
-            <a href="#find-a-friend">Sobre a FindAFriend</a>
-            <a href="#contato">Contato</a>
+            <a href="#about">Sobre a FindAFriend</a>
+            <a href="#contact">Contato</a>
           </nav>
         </div>
       </header>
@@ -166,13 +166,114 @@
 
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
-
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
             </section>
           </div>
         </div>
+
+        <div class="about-container">
+          <div class="about-content">
+            <section class="section-about" id="about">
+              <div class="info-section">
+                <strong>Sobre a FindAFriend</strong>
+
+                <p>
+                  A FindAFriend acredita que todo bichinho merece uma vida
+                  confortável e segura. Por isso, cria soluções que ajudam ONGs
+                  e entidades protetoras a conectar pessoas adotantes e animais
+                  resgatados.
+                </p>
+              </div>
+
+              <div class="section-grid-about">
+                <div class="section-grid-item">
+                  <img src="assets/img-card-mobile/hamilton.svg" alt="" />
+                </div>
+
+                <div class="section-grid-item">
+                  <img src="assets/img-card-mobile/lara.svg" alt="" />
+                </div>
+
+                <div class="section-grid-item">
+                  <img src="assets/img-card-mobile/aline.svg" alt="" />
+                </div>
+
+                <div class="section-grid-item">
+                  <img src="assets/img-card-mobile/tadeu.svg" alt="" />
+                </div>
+              </div>
+
+              <div class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="assets/img-card-mobile/hamilton.svg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img-card-mobile/lara.svg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img-card-mobile/aline.svg" alt="" />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img src="assets/img-card-mobile/tadeu.svg" alt="" />
+                  </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="container-contact" id="contact">
+                <img src="assets/contact-bg.svg" alt="" />
+
+                <div class="info-contact">
+                  <strong>Entre em contato conosco</strong>
+                  <a
+                    href="mailto:nossomos@findafriend.com?subject=Visitei sua página e preciso de mais informações"
+                  >
+                    <img src="assets/mail.png" alt="" />
+                    Clique aqui e envie um email
+                  </a>
+                </div>
+              </div>
+
+              <div class="container-contact-mobile">
+                <img src="assets/bg-mobile.svg" alt="" />
+
+                <div class="info-contact-mobile">
+                  <strong>Entre em contato conosco</strong>
+
+                  <a
+                    href="mailto:nossomos@findafriend.com?subject=Visitei sua página e preciso de mais informações"
+                  >
+                    <img src="assets/mail.png" alt="" />
+                    Clique aqui e envie um email</a
+                  >
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-logo">
+              <img src="assets/logo-img.png" alt="" />
+              <strong>FindAFriend</strong>
+            </div>
+
+            <div class="footer-rights">
+              <p>2023 ® FindAFriend</p>
+              <p>All rights reserved</p>
+            </div>
+          </div>
+        </footer>
       </main>
     </div>
   </body>
@@ -185,6 +286,21 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper2 ", {
       slidesPerView: "auto",
       spaceBetween: 30,
       pagination: {

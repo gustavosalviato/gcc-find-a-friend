@@ -1,5 +1,8 @@
 .swiper-slide {
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -47,7 +50,7 @@
 @media (max-width: 992px) {
   .swiper {
     width: 25.6rem;
-    height: 17.4rem;
+    height: 28.4rem;
   }
 
   .swiper-slide img {
@@ -62,4 +65,14 @@
   .swiper-pagination{
     display: none;
   }
+}
+
+@media (min-width: 993px) {
+  .mySwiper2 {
+    display: none;
+  }
+}
+
+.mySwiper2{
+  margin-top: 2.4rem;
 }
